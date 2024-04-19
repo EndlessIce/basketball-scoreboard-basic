@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="flex">
+    <div class="container flex">
+        <div class="scoreboard flex">
+            <h3 class="scoreboard__team">HOME</h3>
+            <div class="scoreboard__display flex">
+                <p id="points-home" class="scoreboard__points">0</p>
+            </div>
+            <div class="scoreboard__btn-box flex">
+                <button id="btn-home-addpoints-1" class="scoreboard__btn-addpoints"
+                    onclick="addPointsHome(pointsHome, addPoints1)">+1</button>
+                <button id="btn-home-addpoints-2" class="scoreboard__btn-addpoints"
+                    onclick="addPointsHome(pointsHome, addPoints2)">+2</button>
+                <button id="btn-home-addpoints-3" class="scoreboard__btn-addpoints"
+                    onclick="addPointsHome(pointsHome, addPoints3)">+3</button>
+            </div>
+        </div>
+        <div class="scoreboard flex">
+            <h3 class="scoreboard__team">GUEST</h3>
+            <div class="scoreboard__display flex">
+                <p id="points-guest" class="scoreboard__points">0</p>
+            </div>
+            <div class="scoreboard__btn-box flex">
+                <button id="btn-guest-addpoints-1" class="scoreboard__btn-addpoints"
+                    onclick="addPointsGuest(pointsGuest, addPoints1)">+1</button>
+                <button id="btn-guest-addpoints-2" class="scoreboard__btn-addpoints"
+                    onclick="addPointsGuest(pointsGuest, addPoints2)">+2</button>
+                <button id="btn-guest-addpoints-3" class="scoreboard__btn-addpoints"
+                    onclick="addPointsGuest(pointsGuest, addPoints3)">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

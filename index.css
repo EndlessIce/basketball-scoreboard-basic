@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'Cursed Timer';
+	src: url('CursedTimerUlil-Aznm.ttf');
+	ascent-override: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+	--color-container-bg: #1b244a;
+	--color-scoreboard-team: #eeeeee;
+	--color-scoreboard-display-bg: #080001;
+	--color-scoreboard-points: #f94f6d;
+	--color-scoreboard-btn-addpoints: #9aabd8;
+}
+
+body {
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #064e3b;
+}
+
+/* GENERAL CLASSESS */
+.container {
+	justify-content: space-around;
+	padding: 7em 3em;
+	width: 57em;
+	background-color: var(--color-container-bg);
+}
+
+/* UTILITY CLASSES */
+.flex {
+	display: flex;
+}
+
+.scoreboard {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* BEM CLASSES */
+.scoreboard__team {
+	font-size: 4rem;
+	color: var(--color-scoreboard-team);
+}
+
+.scoreboard__display {
+	justify-content: center;
+	align-items: center;
+	margin: 2em 0 2.5em;
+	width: 15.5em;
+	height: 12em;
+	font-family: 'Cursed Timer';
+	background-color: var(--color-scoreboard-display-bg);
+}
+
+.scoreboard__points {
+	font-size: 9rem;
+	color: var(--color-scoreboard-points);
+}
+
+.scoreboard__btn-box {
+	justify-content: space-between;
+	width: 15.5em;
+}
+
+.scoreboard__btn-addpoints {
+	width: 2.5em;
+	height: 2.5em;
+	font-family: 'Cursed Timer';
+	font-size: 1.8rem;
+	color: var(--color-scoreboard-btn-addpoints);
+	background: none;
+	border: 0.2rem solid var(--color-scoreboard-btn-addpoints);
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
